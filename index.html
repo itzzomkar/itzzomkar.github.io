@@ -2,27 +2,28 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>Omkar Kadam (@itzzomkar) — 3D Interactive Physics Portfolio</title>
-  <meta name="description" content="Drive a 3D RC toy car across the interactive physics portfolio of Omkar Kadam (@itzzomkar) — AI & Machine Learning Specialist, Kaggle Datasets Expert (#242 Global Rank). Knock down skill crates, launch off ramps, and explore projects.">
-  <meta name="keywords" content="itzzomkar, Omkar Kadam, 3D portfolio, Three.js portfolio, Bruno Simon portfolio, Cannon.js physics, Kaggle expert, AI ML Engineer Mumbai, Mumbai University KT">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Omkar Kadam (@itzzomkar) | LinkedIn & Kaggle Datasets Expert | AI & ML Engineer</title>
+  <meta name="description" content="Connect with Omkar Kadam (@itzzomkar) on LinkedIn (linkedin.com/in/itzzomkar) and Kaggle (kaggle.com/itzzomkar). Kaggle Datasets Expert (#242 Global Rank) & AI/ML Engineer based in Mumbai.">
+  <meta name="keywords" content="itzzomkar, Omkar Kadam, itzzomkar linkedin, itzzomkar kaggle, linkedin.com/in/itzzomkar, kaggle.com/itzzomkar, AI ML Engineer Mumbai University">
   <meta name="author" content="Omkar Kadam (itzzomkar)">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Omkar Kadam (@itzzomkar) — 3D Interactive Physics Portfolio">
-  <meta property="og:description" content="Drive an RC car in 3D physics across the portfolio of Omkar Kadam. Knock down crates, launch off ramps, and discover datasets and ML pipelines.">
-  <meta property="og:type" content="website">
+  <meta property="og:title" content="Omkar Kadam (@itzzomkar) — LinkedIn & Kaggle AI Portfolio">
+  <meta property="og:description" content="Official hub for Omkar Kadam (@itzzomkar). Connect on LinkedIn and explore Kaggle Datasets.">
+  <meta property="og:type" content="profile">
   <meta property="og:url" content="https://itzzomkar.github.io/">
 
-  <!-- Google Knowledge Graph Schema (JSON-LD) for SEO #1 Ranking -->
+  <!-- Google Knowledge Graph Schema (JSON-LD) - Prioritizing LinkedIn & Kaggle -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "Omkar Kadam",
     "alternateName": "itzzomkar",
-    "url": "https://itzzomkar.github.io",
-    "jobTitle": "AI & Machine Learning Specialist",
+    "url": "https://www.linkedin.com/in/itzzomkar/",
+    "mainEntityOfPage": "https://www.linkedin.com/in/itzzomkar/",
+    "jobTitle": "AI & Machine Learning Specialist | Kaggle Datasets Expert",
     "alumniOf": {
       "@type": "CollegeOrUniversity",
       "name": "University of Mumbai"
@@ -30,7 +31,7 @@
     "sameAs": [
       "https://www.linkedin.com/in/itzzomkar/",
       "https://www.kaggle.com/itzzomkar",
-      "https://github.com/itzzomkar",
+      "https://www.kaggle.com/datasets/itzzomkar/mumbai-university-kt-students-dataset",
       "https://huggingface.co/itzzomkar",
       "https://medium.com/@itzzomkar",
       "https://linktr.ee/itzzomkar"
@@ -40,35 +41,39 @@
       "Machine Learning",
       "Predictive Analytics",
       "Data Science",
-      "Three.js",
-      "Cannon.js Physics",
       "Python",
-      "LightGBM",
+      "Deep Learning",
       "Kaggle Competitions"
     ]
   }
   </script>
 
-  <!-- Google Fonts & Font Awesome Icons -->
+  <!-- Google Fonts: Sora (Headings) & Outfit (Body) from the Figma Template -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800;900&family=Sora:wght@600;700;800;900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Sora:wght@400;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-  <!-- Three.js & Cannon.js Physics CDN -->
+  <!-- Three.js CDN -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/cannon.js/0.6.2/cannon.min.js"></script>
 
   <style>
     :root {
-      --primary: #00f0ff;
-      --accent: #ff3366;
-      --amber: #ffb800;
-      --green: #00ff88;
-      --dark: #0c0f17;
-      --card-bg: rgba(14, 18, 28, 0.88);
-      --border: rgba(255, 255, 255, 0.14);
-      --font-display: 'Sora', sans-serif;
+      --primary-black: #000000;
+      --secondary-black: #121212;
+      --card-black: #18181b;
+      --primary-white: #ffffff;
+      --zinc-100: #f4f4f5;
+      --zinc-200: #e4e4e7;
+      --zinc-300: #d4d4d8;
+      --zinc-400: #a1a1aa;
+      --zinc-500: #71717a;
+      --zinc-700: #3f3f46;
+      --zinc-800: #27272a;
+      --zinc-900: #18181b;
+      --accent: #2563eb;
+      --accent-cyan: #00f0ff;
+      --font-heading: 'Sora', sans-serif;
       --font-body: 'Outfit', sans-serif;
       --font-mono: 'JetBrains Mono', monospace;
     }
@@ -77,1279 +82,1416 @@
       box-sizing: border-box;
       margin: 0;
       padding: 0;
-      user-select: none;
-      -webkit-user-select: none;
     }
 
-    html, body {
-      width: 100%;
-      height: 100%;
-      overflow: hidden;
-      background: #b5cbe0;
+    html {
+      scroll-behavior: smooth;
+      background: var(--primary-white);
+      color: var(--primary-black);
       font-family: var(--font-body);
-      color: #fff;
     }
 
-    #webgl-canvas {
-      position: absolute;
+    body {
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    /* Custom Fluid & Cursor Canvas */
+    #fluid-canvas {
+      position: fixed;
       top: 0;
       left: 0;
       width: 100vw;
       height: 100vh;
-      display: block;
-      z-index: 1;
+      pointer-events: none;
+      z-index: 99990;
+      mix-blend-mode: multiply;
+      opacity: 0.85;
     }
 
-    /* UI Heads-up Display */
-    .hud-layer {
+    /* Custom Interactive Cursor */
+    .custom-cursor {
       position: fixed;
       top: 0;
       left: 0;
-      width: 100%;
-      height: 100%;
+      width: 10px;
+      height: 10px;
+      background: var(--primary-black);
+      border-radius: 50%;
       pointer-events: none;
-      z-index: 10;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      padding: 1.25rem 1.75rem;
+      z-index: 99999;
+      transform: translate(-50%, -50%);
+      transition: width 0.2s, height 0.2s, background 0.2s;
     }
 
-    /* Top Navigation Bar */
-    .top-bar {
-      pointer-events: auto;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      width: 100%;
+    .cursor-follower {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 36px;
+      height: 36px;
+      border: 1.5px solid var(--primary-black);
+      border-radius: 50%;
+      pointer-events: none;
+      z-index: 99998;
+      transform: translate(-50%, -50%);
+      transition: width 0.2s, height 0.2s, border-color 0.2s, background 0.2s;
+    }
+
+    .custom-cursor.hover {
+      width: 20px;
+      height: 20px;
+      background: var(--accent);
+    }
+
+    .cursor-follower.hover {
+      width: 52px;
+      height: 52px;
+      border-color: var(--accent);
+      background: rgba(37, 99, 235, 0.08);
+    }
+
+    /* Text-Stroke Style (Signature Figma Template Feature) */
+    .text-stroke {
+      color: transparent;
+      -webkit-text-stroke: 1.5px var(--primary-black);
+      font-weight: 800;
+    }
+
+    .text-stroke-white {
+      color: transparent;
+      -webkit-text-stroke: 1.5px var(--primary-white);
+      font-weight: 800;
+    }
+
+    /* Navigation */
+    .header {
+      position: sticky;
+      top: 0;
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      z-index: 1000;
+      border-bottom: 1px solid var(--zinc-200);
+      padding: 1.25rem 2rem;
+      transition: all 0.3s ease;
+    }
+
+    .header-inner {
       max-width: 1280px;
       margin: 0 auto;
-    }
-
-    .brand-pill {
-      background: rgba(12, 16, 26, 0.88);
-      border: 1px solid var(--border);
-      backdrop-filter: blur(14px);
-      padding: 0.6rem 1.25rem;
-      border-radius: 999px;
       display: flex;
       align-items: center;
-      gap: 0.75rem;
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+      justify-content: space-between;
     }
 
-    .brand-pill .avatar {
-      width: 32px;
-      height: 32px;
-      background: linear-gradient(135deg, var(--primary), #8a2be2);
-      border-radius: 50%;
+    .logo {
       display: flex;
       align-items: center;
-      justify-content: center;
+      gap: 0.65rem;
+      text-decoration: none;
+      color: var(--primary-black);
+      font-family: var(--font-heading);
       font-weight: 800;
-      font-size: 0.85rem;
-      color: #000;
+      font-size: 1.35rem;
+      letter-spacing: -0.5px;
     }
 
-    .brand-pill .title {
-      font-family: var(--font-display);
-      font-weight: 700;
-      font-size: 0.95rem;
-      letter-spacing: -0.3px;
-    }
-
-    .brand-pill .handle {
-      font-family: var(--font-mono);
-      font-size: 0.78rem;
-      color: var(--primary);
-    }
-
-    .teleport-nav {
-      display: flex;
-      align-items: center;
-      gap: 0.4rem;
-      background: rgba(12, 16, 26, 0.88);
-      border: 1px solid var(--border);
-      backdrop-filter: blur(14px);
-      padding: 0.4rem 0.6rem;
-      border-radius: 999px;
-    }
-
-    .nav-btn {
-      background: transparent;
-      border: none;
-      color: #cbd5e1;
-      padding: 0.45rem 0.85rem;
-      border-radius: 999px;
-      font-size: 0.84rem;
-      font-weight: 600;
-      cursor: pointer;
-      transition: all 0.2s ease;
-      font-family: var(--font-body);
-    }
-
-    .nav-btn:hover, .nav-btn.active {
-      background: var(--primary);
-      color: #000;
-      box-shadow: 0 0 15px rgba(0, 240, 255, 0.4);
-    }
-
-    .top-actions {
-      display: flex;
-      align-items: center;
-      gap: 0.6rem;
-    }
-
-    .icon-action-btn {
-      background: rgba(12, 16, 26, 0.88);
-      border: 1px solid var(--border);
-      backdrop-filter: blur(14px);
-      width: 42px;
-      height: 42px;
-      border-radius: 50%;
-      color: #fff;
+    .logo-badge {
+      width: 38px;
+      height: 38px;
+      background: var(--primary-black);
+      color: var(--primary-white);
+      border-radius: 8px;
       display: flex;
       align-items: center;
       justify-content: center;
       font-size: 1rem;
-      cursor: pointer;
-      transition: all 0.2s ease;
+      font-weight: 800;
     }
 
-    .icon-action-btn:hover {
-      background: #fff;
-      color: #000;
-      transform: scale(1.08);
-    }
-
-    /* Controls Instruction Pill (Desktop) */
-    .controls-pill {
-      background: rgba(12, 16, 26, 0.88);
-      border: 1px solid var(--border);
-      backdrop-filter: blur(16px);
-      padding: 0.85rem 1.6rem;
-      border-radius: 18px;
-      margin: 0 auto;
+    .nav-menu {
       display: flex;
       align-items: center;
-      gap: 1.4rem;
-      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
-      pointer-events: auto;
+      gap: 2.25rem;
+      list-style: none;
     }
 
-    .key-group {
-      display: flex;
-      align-items: center;
-      gap: 0.45rem;
-      font-size: 0.88rem;
-      color: #e2e8f0;
+    .nav-item a {
+      color: var(--primary-black);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: color 0.2s ease;
+      position: relative;
     }
 
-    .key-badge {
-      background: #1e293b;
-      border: 1px solid #475569;
+    .nav-item a:hover {
+      color: var(--accent);
+    }
+
+    .btn-resume {
+      background: var(--primary-black);
+      color: var(--primary-white);
+      border: 2px solid var(--primary-black);
+      padding: 0.65rem 1.45rem;
       border-radius: 6px;
-      padding: 0.25rem 0.55rem;
-      font-family: var(--font-mono);
-      font-size: 0.78rem;
       font-weight: 700;
-      color: var(--primary);
-    }
-
-    .speedo-wrap {
+      font-size: 0.95rem;
+      text-decoration: none;
       display: flex;
       align-items: center;
       gap: 0.5rem;
-      font-family: var(--font-mono);
-      font-weight: 700;
-      font-size: 0.95rem;
-      color: var(--amber);
-      padding-left: 0.8rem;
-      border-left: 1px solid rgba(255, 255, 255, 0.15);
+      transition: all 0.25s ease;
     }
 
-    /* Interactive Center Modal (Triggers on Driving onto Project Podiums) */
-    .zone-modal {
-      position: fixed;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%) scale(0.92);
-      width: 92%;
-      max-width: 540px;
-      background: var(--card-bg);
-      border: 1px solid rgba(0, 240, 255, 0.3);
-      backdrop-filter: blur(24px);
-      border-radius: 24px;
-      padding: 2.25rem;
-      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6), 0 0 40px rgba(0, 240, 255, 0.15);
-      pointer-events: auto;
-      opacity: 0;
-      visibility: hidden;
-      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-      z-index: 100;
+    .btn-resume:hover {
+      background: var(--primary-white);
+      color: var(--primary-black);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     }
 
-    .zone-modal.active {
-      opacity: 1;
-      visibility: visible;
-      transform: translate(-50%, -50%) scale(1);
-    }
-
-    .modal-close-btn {
-      position: absolute;
-      top: 1.25rem;
-      right: 1.25rem;
-      background: rgba(255, 255, 255, 0.08);
-      border: 1px solid var(--border);
-      width: 36px;
-      height: 36px;
-      border-radius: 50%;
-      color: #94a3b8;
+    /* Hero Section */
+    .hero {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 4.5rem 2rem 5.5rem;
       display: flex;
+      flex-direction: column-reverse;
       align-items: center;
-      justify-content: center;
-      cursor: pointer;
-      transition: all 0.2s ease;
+      gap: 3.5rem;
     }
 
-    .modal-close-btn:hover {
-      background: var(--accent);
-      color: #fff;
-      transform: rotate(90deg);
+    @media (min-width: 992px) {
+      .hero {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
     }
 
-    .modal-tag {
-      display: inline-block;
-      font-family: var(--font-mono);
-      font-size: 0.78rem;
-      font-weight: 700;
-      color: var(--primary);
-      text-transform: uppercase;
-      letter-spacing: 1.2px;
-      margin-bottom: 0.6rem;
+    .hero-content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 1.75rem;
     }
 
-    .modal-title {
-      font-family: var(--font-display);
-      font-size: 1.75rem;
+    .hero-greeting {
+      font-family: var(--font-heading);
+      font-size: clamp(2rem, 4.5vw, 3.4rem);
+      line-height: 1.15;
+      font-weight: 400;
+      color: var(--primary-black);
+      letter-spacing: -1px;
+    }
+
+    .hero-greeting span.bold {
       font-weight: 800;
-      letter-spacing: -0.6px;
-      margin-bottom: 0.85rem;
-      line-height: 1.25;
-      color: #fff;
     }
 
-    .modal-desc {
-      color: #cbd5e1;
-      font-size: 0.95rem;
-      line-height: 1.6;
-      margin-bottom: 1.4rem;
+    .hero-role {
+      font-family: var(--font-heading);
+      font-size: clamp(2rem, 4.5vw, 3.4rem);
+      line-height: 1.15;
+      font-weight: 800;
+      color: var(--primary-black);
+      letter-spacing: -1px;
     }
 
-    .modal-tags {
+    .hero-location {
+      font-family: var(--font-heading);
+      font-size: clamp(1.8rem, 4vw, 3rem);
+      line-height: 1.15;
+      color: var(--primary-black);
+      letter-spacing: -1px;
+    }
+
+    .hero-handle-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: var(--zinc-100);
+      border: 1px solid var(--zinc-300);
+      padding: 0.35rem 0.85rem;
+      border-radius: 999px;
+      font-family: var(--font-mono);
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: var(--primary-black);
+      width: fit-content;
+      margin-bottom: 0.25rem;
+    }
+
+    .hero-desc {
+      font-size: 1.05rem;
+      line-height: 1.7;
+      color: var(--zinc-500);
+      max-width: 560px;
+    }
+
+    /* Priority SEO Action Buttons */
+    .priority-cta-row {
       display: flex;
       flex-wrap: wrap;
-      gap: 0.5rem;
-      margin-bottom: 1.6rem;
+      gap: 1rem;
+      margin-top: 0.25rem;
     }
 
-    .modal-pill {
-      background: rgba(255, 255, 255, 0.06);
-      border: 1px solid rgba(255, 255, 255, 0.12);
-      padding: 0.35rem 0.8rem;
-      border-radius: 999px;
-      font-size: 0.78rem;
-      font-family: var(--font-mono);
-      color: #94a3b8;
-    }
-
-    .modal-cta-row {
-      display: flex;
-      gap: 0.85rem;
-    }
-
-    .modal-btn-primary {
-      flex: 1;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 0.6rem;
-      background: var(--primary);
-      color: #000;
-      font-weight: 700;
-      font-size: 0.92rem;
+    .priority-btn-linkedin {
+      background: #0a66c2;
+      color: #fff;
       padding: 0.85rem 1.5rem;
-      border-radius: 12px;
+      border-radius: 8px;
+      font-weight: 700;
       text-decoration: none;
-      transition: all 0.25s ease;
-      box-shadow: 0 5px 20px rgba(0, 240, 255, 0.3);
-    }
-
-    .modal-btn-primary:hover {
-      background: #fff;
-      transform: translateY(-2px);
-      box-shadow: 0 8px 25px rgba(0, 240, 255, 0.45);
-    }
-
-    .modal-btn-secondary {
       display: inline-flex;
       align-items: center;
-      justify-content: center;
       gap: 0.6rem;
-      background: rgba(255, 255, 255, 0.08);
-      border: 1px solid var(--border);
-      color: #fff;
-      font-weight: 600;
-      font-size: 0.92rem;
-      padding: 0.85rem 1.25rem;
-      border-radius: 12px;
-      text-decoration: none;
-      transition: all 0.25s ease;
+      border: 2px solid #0a66c2;
+      transition: all 0.2s ease;
     }
 
-    .modal-btn-secondary:hover {
-      background: rgba(255, 255, 255, 0.16);
+    .priority-btn-linkedin:hover {
+      background: #004182;
       transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(10, 102, 194, 0.3);
     }
 
-    /* Mobile Virtual Controls */
-    .mobile-controls {
-      display: none;
-      pointer-events: auto;
-      width: 100%;
-      justify-content: space-between;
-      align-items: flex-end;
-      padding-bottom: 0.5rem;
+    .priority-btn-kaggle {
+      background: #20beff;
+      color: #000;
+      padding: 0.85rem 1.5rem;
+      border-radius: 8px;
+      font-weight: 700;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      border: 2px solid #000;
+      transition: all 0.2s ease;
     }
 
-    .joystick-zone {
-      display: grid;
-      grid-template-columns: repeat(3, 56px);
-      grid-template-rows: repeat(2, 56px);
-      gap: 8px;
+    .priority-btn-kaggle:hover {
+      background: #000;
+      color: #20beff;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(32, 190, 255, 0.3);
     }
 
-    .mobile-key {
-      background: rgba(12, 16, 26, 0.85);
-      border: 1px solid var(--border);
-      backdrop-filter: blur(12px);
-      border-radius: 14px;
-      color: #fff;
-      font-size: 1.25rem;
+    .social-row {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-top: 0.25rem;
+    }
+
+    .social-btn {
+      width: 46px;
+      height: 46px;
+      border: 2px solid var(--primary-black);
+      border-radius: 8px;
       display: flex;
       align-items: center;
       justify-content: center;
-      cursor: pointer;
-      touch-action: none;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      color: var(--primary-black);
+      text-decoration: none;
+      font-size: 1.25rem;
+      transition: all 0.2s ease;
+      background: var(--primary-white);
     }
 
-    .mobile-key:active {
-      background: var(--primary);
-      color: #000;
-      transform: scale(0.95);
+    .social-btn:hover {
+      background: var(--primary-black);
+      color: var(--primary-white);
+      transform: translateY(-3px);
+      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
     }
 
-    .pedal-zone {
+    /* 3D Illustration Container */
+    .hero-visual {
+      flex: 1;
+      position: relative;
       display: flex;
-      gap: 12px;
+      align-items: center;
+      justify-content: center;
+      max-width: 540px;
+      width: 100%;
     }
 
-    .pedal-btn {
-      width: 76px;
-      height: 60px;
-      border-radius: 14px;
-      font-family: var(--font-display);
+    .illustration-frame {
+      position: relative;
+      width: 100%;
+      height: 440px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #three-hero-canvas {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      border-radius: 24px;
+    }
+
+    .illustration-badge-tag {
+      position: absolute;
+      background: var(--primary-white);
+      border: 2px solid var(--primary-black);
+      padding: 0.55rem 1rem;
+      border-radius: 12px;
+      font-weight: 700;
+      font-size: 0.88rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      box-shadow: 4px 4px 0px var(--primary-black);
+      z-index: 2;
+      animation: floatTag 4s ease-in-out infinite alternate;
+    }
+
+    .badge-tag-top {
+      top: 15px;
+      right: 10px;
+      animation-delay: -1s;
+    }
+
+    .badge-tag-bottom {
+      bottom: 25px;
+      left: 10px;
+      animation-delay: -2.5s;
+    }
+
+    @keyframes floatTag {
+      0% { transform: translateY(0px); }
+      100% { transform: translateY(-10px); }
+    }
+
+    /* Skills Section (Exact Figma Grid) */
+    .section-skills {
+      background: var(--primary-white);
+      padding: 5.5rem 2rem;
+      border-top: 1px solid var(--zinc-200);
+    }
+
+    .section-title {
+      font-family: var(--font-heading);
+      font-size: clamp(2rem, 3.8vw, 3rem);
+      text-align: center;
+      margin-bottom: 3.5rem;
+      font-weight: 400;
+      letter-spacing: -1px;
+    }
+
+    .section-title span.bold {
+      font-weight: 800;
+    }
+
+    .skills-grid {
+      max-width: 1280px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.25rem;
+    }
+
+    @media (min-width: 640px) {
+      .skills-grid { grid-template-columns: repeat(3, 1fr); }
+    }
+    @media (min-width: 992px) {
+      .skills-grid { grid-template-columns: repeat(5, 1fr); gap: 1.75rem; }
+    }
+
+    .skill-box {
+      border: 2px solid var(--primary-black);
+      border-radius: 8px;
+      padding: 2.25rem 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1.25rem;
+      background: var(--primary-white);
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+      cursor: default;
+      position: relative;
+    }
+
+    .skill-box i {
+      font-size: 2.85rem;
+      color: var(--primary-black);
+      transition: all 0.25s ease;
+    }
+
+    .skill-box span {
+      font-weight: 800;
+      font-size: 1.1rem;
+      font-family: var(--font-heading);
+      letter-spacing: -0.3px;
+      color: var(--primary-black);
+      transition: all 0.25s ease;
+    }
+
+    /* Exact Invert Hover Effect from Figma */
+    .skill-box:hover {
+      background: var(--primary-black);
+      transform: translateY(-5px);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    }
+
+    .skill-box:hover i,
+    .skill-box:hover span {
+      color: var(--primary-white);
+    }
+
+    /* About Me Section (Signature Dark Section) */
+    .section-about {
+      background: var(--primary-black);
+      color: var(--primary-white);
+      padding: 6.5rem 2rem;
+    }
+
+    .about-container {
+      max-width: 1280px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 3.5rem;
+    }
+
+    @media (min-width: 992px) {
+      .about-container {
+        flex-direction: row;
+        align-items: center;
+        gap: 5rem;
+      }
+    }
+
+    .about-visual {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+    }
+
+    .about-visual-card {
+      width: 100%;
+      max-width: 480px;
+      background: var(--secondary-black);
+      border: 2px solid var(--zinc-800);
+      border-radius: 20px;
+      padding: 2.5rem 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+    }
+
+    .about-stat-item {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      border-bottom: 1px solid var(--zinc-800);
+      padding-bottom: 1rem;
+    }
+
+    .about-stat-num {
+      font-family: var(--font-heading);
+      font-size: 2.2rem;
+      font-weight: 800;
+      color: var(--primary-white);
+    }
+
+    .about-stat-lbl {
+      color: var(--zinc-400);
+      font-size: 0.95rem;
+      font-weight: 500;
+    }
+
+    .about-content {
+      flex: 1.2;
+      display: flex;
+      flex-direction: column;
+      gap: 1.75rem;
+    }
+
+    .about-title {
+      font-family: var(--font-heading);
+      font-size: clamp(2rem, 3.8vw, 3rem);
+      font-weight: 400;
+      letter-spacing: -1px;
+    }
+
+    .about-text {
+      color: var(--zinc-300);
+      font-size: 1.05rem;
+      line-height: 1.75;
+      font-weight: 400;
+    }
+
+    /* Projects Section (Alternating Cards from Figma) */
+    .section-projects {
+      background: var(--primary-white);
+      padding: 6.5rem 2rem;
+    }
+
+    .projects-container {
+      max-width: 1280px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 3.5rem;
+    }
+
+    .project-card {
+      background: var(--primary-black);
+      color: var(--primary-white);
+      border: 2px solid var(--primary-black);
+      border-radius: 16px;
+      padding: 2.5rem 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    @media (min-width: 992px) {
+      .project-card {
+        padding: 3.5rem 4rem;
+      }
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    }
+
+    .project-header {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .project-number {
+      font-family: var(--font-heading);
+      font-size: clamp(2.2rem, 4vw, 3.5rem);
+      font-weight: 800;
+      color: var(--zinc-700);
+      line-height: 1;
+    }
+
+    .project-title {
+      font-family: var(--font-heading);
+      font-size: clamp(1.4rem, 2.5vw, 2.2rem);
+      font-weight: 800;
+      color: var(--primary-white);
+      letter-spacing: -0.5px;
+    }
+
+    .project-desc {
+      color: var(--zinc-300);
+      font-size: 1.05rem;
+      line-height: 1.7;
+    }
+
+    .project-tech-label {
       font-weight: 800;
       font-size: 0.95rem;
+      margin-bottom: 0.65rem;
+      display: block;
+    }
+
+    .project-tech-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      list-style: none;
+    }
+
+    .project-tech-pill {
+      background: var(--zinc-900);
+      border: 1px solid var(--zinc-700);
+      color: var(--zinc-200);
+      padding: 0.35rem 0.85rem;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      font-family: var(--font-mono);
+    }
+
+    .project-links {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-top: 0.5rem;
+    }
+
+    .project-link-btn {
+      width: 44px;
+      height: 44px;
+      background: var(--primary-white);
+      color: var(--primary-black);
+      border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
-      border: none;
-      cursor: pointer;
-      touch-action: none;
+      text-decoration: none;
+      font-size: 1.15rem;
+      transition: all 0.2s ease;
     }
 
-    .pedal-gas {
-      background: var(--primary);
-      color: #000;
-      box-shadow: 0 4px 15px rgba(0, 240, 255, 0.4);
-    }
-
-    .pedal-gas:active {
-      background: #fff;
-      transform: scale(0.96);
-    }
-
-    .pedal-brake {
+    .project-link-btn:hover {
       background: var(--accent);
-      color: #fff;
-      box-shadow: 0 4px 15px rgba(255, 51, 102, 0.4);
+      color: var(--primary-white);
+      transform: scale(1.1);
     }
 
-    .pedal-brake:active {
-      background: #ff6688;
-      transform: scale(0.96);
+    /* Contact Section (Exact Figma Layout) */
+    .section-contact {
+      background: var(--primary-white);
+      padding: 6.5rem 2rem;
+      border-top: 1px solid var(--zinc-200);
     }
 
-    /* Screen reader & SEO Semantic Content */
-    .seo-hidden-layer {
-      position: absolute;
-      width: 1px;
-      height: 1px;
-      margin: -1px;
-      padding: 0;
-      overflow: hidden;
-      clip: rect(0, 0, 0, 0);
-      border: 0;
+    .contact-container {
+      max-width: 1280px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 4rem;
     }
 
-    @media (max-width: 860px) {
-      .controls-pill { display: none; }
-      .mobile-controls { display: flex; }
-      .teleport-nav { display: none; }
+    @media (min-width: 992px) {
+      .contact-container {
+        flex-direction: row-reverse;
+        align-items: flex-start;
+        justify-content: space-between;
+      }
+    }
+
+    .contact-info {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    .contact-heading {
+      font-family: var(--font-heading);
+      font-size: clamp(2rem, 4vw, 3.2rem);
+      font-weight: 800;
+      line-height: 1.15;
+      letter-spacing: -1px;
+    }
+
+    .contact-desc {
+      color: var(--zinc-500);
+      font-size: 1.05rem;
+      line-height: 1.7;
+      max-width: 500px;
+    }
+
+    .contact-direct {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .direct-item {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      text-decoration: none;
+      color: var(--primary-black);
+      font-weight: 700;
+      font-size: 1.1rem;
+      transition: color 0.2s;
+    }
+
+    .direct-item:hover {
+      color: var(--accent);
+    }
+
+    .direct-icon {
+      width: 44px;
+      height: 44px;
+      border: 2px solid var(--primary-black);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.15rem;
+    }
+
+    .contact-form {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      max-width: 540px;
+      width: 100%;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .form-label {
+      font-weight: 700;
+      font-size: 0.95rem;
+    }
+
+    .form-input, .form-textarea {
+      border: 2px solid var(--primary-black);
+      border-radius: 8px;
+      padding: 0.9rem 1.15rem;
+      font-family: var(--font-body);
+      font-size: 1rem;
+      color: var(--primary-black);
+      outline: none;
+      transition: all 0.2s;
+      background: var(--primary-white);
+    }
+
+    .form-input:focus, .form-textarea:focus {
+      box-shadow: 4px 4px 0px var(--primary-black);
+      transform: translate(-2px, -2px);
+    }
+
+    .form-textarea {
+      min-height: 140px;
+      resize: vertical;
+    }
+
+    .btn-submit {
+      background: var(--primary-black);
+      color: var(--primary-white);
+      border: 2px solid var(--primary-black);
+      padding: 1rem 2rem;
+      border-radius: 8px;
+      font-weight: 800;
+      font-size: 1.05rem;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      font-family: var(--font-heading);
+    }
+
+    .btn-submit:hover {
+      background: var(--primary-white);
+      color: var(--primary-black);
+      box-shadow: 4px 4px 0px var(--primary-black);
+      transform: translate(-2px, -2px);
+    }
+
+    /* Footer */
+    .footer {
+      background: var(--primary-black);
+      color: var(--primary-white);
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+
+    .footer-inner {
+      max-width: 1280px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5rem;
+    }
+
+    .footer-copy {
+      color: var(--zinc-400);
+      font-size: 0.95rem;
+    }
+
+    .footer-socials {
+      display: flex;
+      gap: 1rem;
+    }
+
+    .footer-social-btn {
+      width: 40px;
+      height: 40px;
+      border: 1.5px solid var(--zinc-700);
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--primary-white);
+      text-decoration: none;
+      transition: all 0.2s;
+    }
+
+    .footer-social-btn:hover {
+      background: var(--primary-white);
+      color: var(--primary-black);
+      border-color: var(--primary-white);
+    }
+
+    @media (max-width: 768px) {
+      .nav-menu { display: none; }
+      .custom-cursor, .cursor-follower { display: none; }
     }
   </style>
 </head>
 <body>
 
-  <!-- 3D Three.js WebGL Canvas -->
-  <canvas id="webgl-canvas"></canvas>
+  <!-- Interactive Fluid Physics Canvas -->
+  <canvas id="fluid-canvas"></canvas>
 
-  <!-- Heads Up Display (HUD) -->
-  <div class="hud-layer">
-    <!-- Top Navigation -->
-    <div class="top-bar">
-      <div class="brand-pill">
-        <div class="avatar">OK</div>
-        <div>
-          <span class="title">Omkar Kadam</span>
-          <span class="handle">@itzzomkar</span>
+  <!-- Custom Mouse Cursor -->
+  <div class="custom-cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursor-follower"></div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="#" class="logo interactive">
+        <div class="logo-badge">OK</div>
+        <span>Omkar Kadam</span>
+      </a>
+
+      <ul class="nav-menu">
+        <li class="nav-item"><a href="#about" class="interactive">About Me</a></li>
+        <li class="nav-item"><a href="#skills" class="interactive">Skills</a></li>
+        <li class="nav-item"><a href="#projects" class="interactive">Projects</a></li>
+        <li class="nav-item"><a href="#contact" class="interactive">Contact Me</a></li>
+      </ul>
+
+      <a href="https://www.linkedin.com/in/itzzomkar/" target="_blank" rel="noopener noreferrer" class="btn-resume interactive">
+        <span>LinkedIn (@itzzomkar)</span>
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero Section (Matches Figma Illustration Layout) -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <div class="hero-handle-pill interactive">
+        <i class="fas fa-terminal" style="color: var(--accent);"></i>
+        <span>itzzomkar</span>
+      </div>
+
+      <div class="hero-greeting">
+        Hello, I'm <span class="bold">Omkar Kadam.</span>
+      </div>
+
+      <div class="hero-role">
+        <span>AI & ML </span>
+        <span class="text-stroke">Engineer</span>
+      </div>
+
+      <div class="hero-location">
+        Based In <span class="bold">Mumbai, India.</span>
+      </div>
+
+      <p class="hero-desc">
+        I am a Computer Science & AIML student at Mumbai University and recognized <strong><a href="https://www.kaggle.com/itzzomkar" style="color: #000; text-decoration: underline;">Kaggle Datasets Expert (@itzzomkar)</a></strong> (#242 Global Rank). Connect with me on <strong><a href="https://www.linkedin.com/in/itzzomkar/" style="color: #0a66c2; text-decoration: underline;">LinkedIn (Omkar Kadam - itzzomkar)</a></strong> to explore reproducible data architectures and predictive machine learning models.
+      </p>
+
+      <!-- Priority Dofollow CTA Buttons for Search Crawlers -->
+      <div class="priority-cta-row">
+        <a href="https://www.linkedin.com/in/itzzomkar/" target="_blank" rel="noopener noreferrer" class="priority-btn-linkedin interactive">
+          <i class="fab fa-linkedin"></i>
+          <span>Omkar Kadam (@itzzomkar) on LinkedIn</span>
+        </a>
+        <a href="https://www.kaggle.com/itzzomkar" target="_blank" rel="noopener noreferrer" class="priority-btn-kaggle interactive">
+          <i class="fab fa-kaggle"></i>
+          <span>Omkar Kadam (@itzzomkar) on Kaggle</span>
+        </a>
+      </div>
+
+      <div class="social-row">
+        <a href="https://www.linkedin.com/in/itzzomkar/" target="_blank" rel="noopener noreferrer" class="social-btn interactive" title="Omkar Kadam LinkedIn (itzzomkar)">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://www.kaggle.com/itzzomkar" target="_blank" rel="noopener noreferrer" class="social-btn interactive" title="Omkar Kadam Kaggle (itzzomkar)">
+          <i class="fab fa-kaggle"></i>
+        </a>
+        <a href="https://huggingface.co/itzzomkar" target="_blank" rel="noopener noreferrer" class="social-btn interactive" title="Hugging Face">
+          <i class="fas fa-smile-beam"></i>
+        </a>
+        <a href="https://medium.com/@itzzomkar" target="_blank" rel="noopener noreferrer" class="social-btn interactive" title="Medium">
+          <i class="fab fa-medium-m"></i>
+        </a>
+        <a href="https://linktr.ee/itzzomkar" target="_blank" rel="noopener noreferrer" class="social-btn interactive" title="Linktree">
+          <i class="fas fa-link"></i>
+        </a>
+        <a href="https://github.com/itzzomkar" target="_blank" rel="nofollow noopener noreferrer" class="social-btn interactive" title="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- 3D Interactive Three.js Neural Sphere Canvas with Floating Badges -->
+    <div class="hero-visual">
+      <div class="illustration-frame">
+        <canvas id="three-hero-canvas"></canvas>
+
+        <div class="illustration-badge-tag badge-tag-top interactive">
+          <i class="fas fa-award" style="color: #ffb800;"></i>
+          <span>Kaggle Datasets Expert</span>
+        </div>
+
+        <div class="illustration-badge-tag badge-tag-bottom interactive">
+          <i class="fas fa-code-branch" style="color: #000;"></i>
+          <span>Top 2% Globally</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section (Exact Figma Grid Layout with Invert Hover) -->
+  <section class="section-skills" id="skills">
+    <h2 class="section-title">
+      My <span class="bold">Skills</span>
+    </h2>
+
+    <div class="skills-grid">
+      <div class="skill-box interactive">
+        <i class="fab fa-python"></i>
+        <span>Python</span>
+      </div>
+
+      <div class="skill-box interactive">
+        <i class="fas fa-brain"></i>
+        <span>PyTorch</span>
+      </div>
+
+      <div class="skill-box interactive">
+        <i class="fas fa-project-diagram"></i>
+        <span>TensorFlow</span>
+      </div>
+
+      <div class="skill-box interactive">
+        <i class="fas fa-cogs"></i>
+        <span>Scikit-Learn</span>
+      </div>
+
+      <div class="skill-box interactive">
+        <i class="fas fa-chart-line"></i>
+        <span>LightGBM</span>
+      </div>
+
+      <div class="skill-box interactive">
+        <i class="fas fa-table"></i>
+        <span>Pandas</span>
+      </div>
+
+      <div class="skill-box interactive">
+        <i class="fas fa-square-root-alt"></i>
+        <span>NumPy</span>
+      </div>
+
+      <div class="skill-box interactive">
+        <i class="fas fa-database"></i>
+        <span>SQL</span>
+      </div>
+
+      <div class="skill-box interactive">
+        <i class="fab fa-node-js"></i>
+        <span>Node.js</span>
+      </div>
+
+      <div class="skill-box interactive">
+        <i class="fab fa-git-alt"></i>
+        <span>Git / GitHub</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Me Section (Signature Dark Section from Figma) -->
+  <section class="section-about" id="about">
+    <div class="about-container">
+      <div class="about-visual">
+        <div class="about-visual-card interactive">
+          <div class="about-stat-item">
+            <div class="about-stat-num">#242</div>
+            <div class="about-stat-lbl">Global Kaggle Rank</div>
+          </div>
+          <div class="about-stat-item">
+            <div class="about-stat-num">10,000+</div>
+            <div class="about-stat-lbl">Records Analyzed</div>
+          </div>
+          <div class="about-stat-item">
+            <div class="about-stat-num">Top 2%</div>
+            <div class="about-stat-lbl">Datasets Community</div>
+          </div>
+          <div class="about-stat-item" style="border: none;">
+            <div class="about-stat-num">AES-256</div>
+            <div class="about-stat-lbl">Offline Security</div>
+          </div>
         </div>
       </div>
 
-      <!-- Quick Teleport Nav -->
-      <div class="teleport-nav">
-        <button class="nav-btn active" onclick="teleportTo('spawn')">Spawn</button>
-        <button class="nav-btn" onclick="teleportTo('projects')">Projects</button>
-        <button class="nav-btn" onclick="teleportTo('skills')">Skills</button>
-        <button class="nav-btn" onclick="teleportTo('ramp')">Ramp</button>
-        <button class="nav-btn" onclick="teleportTo('socials')">Socials</button>
+      <div class="about-content">
+        <h2 class="about-title">
+          About <span class="bold">Me</span>
+        </h2>
+        <p class="about-text">
+          I am <a href="https://www.linkedin.com/in/itzzomkar/" style="color: #fff; text-decoration: underline;">Omkar Kadam (@itzzomkar)</a>, a Computer Science & AIML student at Mumbai University (Theem College of Engineering), actively building across the spectrum of machine learning, predictive data architectures, and software engineering.
+        </p>
+        <p class="about-text">
+          As a recognized <a href="https://www.kaggle.com/itzzomkar" style="color: #20beff; text-decoration: underline;">Kaggle Datasets Expert (@itzzomkar)</a> ranked #242 globally among 11,800+ data scientists, I focus on identifying empirical data voids and creating high-utility, reproducible datasets. My published works—including the <em>Mumbai University KT Students Dataset</em> and the <em>EV Adoption Behavior Study</em>—analyze student performance and consumer behavior using disciplined statistical feature engineering.
+        </p>
+        <p class="about-text">
+          Beyond modeling, I build production-ready systems with Python, Node.js, SQL, and cryptographic architectures like the offline <em>Wifi Password Manager</em> with zero-knowledge AES-256 encryption. Connect with me directly on <a href="https://www.linkedin.com/in/itzzomkar/" style="color: #fff; text-decoration: underline;">LinkedIn</a> or <a href="https://www.kaggle.com/itzzomkar" style="color: #20beff; text-decoration: underline;">Kaggle</a>.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section (Alternating Cards from Figma) -->
+  <section class="section-projects" id="projects">
+    <h2 class="section-title">
+      My <span class="bold">Projects</span>
+    </h2>
+
+    <div class="projects-container">
+      <!-- Project 01 -->
+      <article class="project-card interactive">
+        <div class="project-header">
+          <span class="project-number">01</span>
+          <h3 class="project-title">Mumbai University KT & Academic Success Dataset</h3>
+        </div>
+        <p class="project-desc">
+          An empirical dataset of 10,000 engineering student records across Mumbai University. Models transit fatigue from daily Mumbai Local train commutes, study hours, peer mentorship, and backlog (KT) likelihood with rigorous predictive validation.
+        </p>
+        <div>
+          <span class="project-tech-label">Technologies:</span>
+          <ul class="project-tech-list">
+            <li class="project-tech-pill">Python</li>
+            <li class="project-tech-pill">Pandas</li>
+            <li class="project-tech-pill">Predictive Analytics</li>
+            <li class="project-tech-pill">Statistical Modeling</li>
+            <li class="project-tech-pill">Kaggle Medaled</li>
+          </ul>
+        </div>
+        <div class="project-links">
+          <a href="https://www.kaggle.com/datasets/itzzomkar/mumbai-university-kt-students-dataset" target="_blank" rel="noopener noreferrer" class="project-link-btn" title="View on Kaggle">
+            <i class="fab fa-kaggle"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/itzzomkar/" target="_blank" rel="noopener noreferrer" class="project-link-btn" title="Connect on LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+        </div>
+      </article>
+
+      <!-- Project 02 -->
+      <article class="project-card interactive">
+        <div class="project-header">
+          <span class="project-number">02</span>
+          <h3 class="project-title">EV Adoption Behavior and Range Anxiety Analysis</h3>
+        </div>
+        <p class="project-desc">
+          Comprehensive data architecture exploring consumer readiness, charging infrastructure accessibility, and psychological range anxiety factors affecting electric vehicle purchasing decisions.
+        </p>
+        <div>
+          <span class="project-tech-label">Technologies:</span>
+          <ul class="project-tech-list">
+            <li class="project-tech-pill">EDA</li>
+            <li class="project-tech-pill">Scikit-Learn</li>
+            <li class="project-tech-pill">Synthetic Modeling</li>
+            <li class="project-tech-pill">Python</li>
+          </ul>
+        </div>
+        <div class="project-links">
+          <a href="https://www.kaggle.com/itzzomkar" target="_blank" rel="noopener noreferrer" class="project-link-btn" title="View on Kaggle">
+            <i class="fab fa-kaggle"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/itzzomkar/" target="_blank" rel="noopener noreferrer" class="project-link-btn" title="Connect on LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+        </div>
+      </article>
+
+      <!-- Project 03 -->
+      <article class="project-card interactive">
+        <div class="project-header">
+          <span class="project-number">03</span>
+          <h3 class="project-title">Wifi Password Manager (Offline AES-256)</h3>
+        </div>
+        <p class="project-desc">
+          Zero-knowledge credential retrieval application utilizing military-grade AES-256 encryption. Completely offline architecture ensuring sensitive network passwords are safe from external telemetry.
+        </p>
+        <div>
+          <span class="project-tech-label">Technologies:</span>
+          <ul class="project-tech-list">
+            <li class="project-tech-pill">Python</li>
+            <li class="project-tech-pill">AES-256</li>
+            <li class="project-tech-pill">Cryptography</li>
+            <li class="project-tech-pill">Offline First</li>
+          </ul>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/itzzomkar/Wifi-Password-Manager" target="_blank" rel="nofollow noopener noreferrer" class="project-link-btn" title="View on GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </article>
+
+      <!-- Project 04 -->
+      <article class="project-card interactive">
+        <div class="project-header">
+          <span class="project-number">04</span>
+          <h3 class="project-title">Kaggle Playground & Computer Vision Pipelines</h3>
+        </div>
+        <p class="project-desc">
+          Ensemble modeling pipelines utilizing LightGBM, XGBoost, and CatBoost with Optuna hyperparameter optimization across tabular benchmarks and 3LC low-light image detection challenges.
+        </p>
+        <div>
+          <span class="project-tech-label">Technologies:</span>
+          <ul class="project-tech-list">
+            <li class="project-tech-pill">LightGBM</li>
+            <li class="project-tech-pill">XGBoost</li>
+            <li class="project-tech-pill">CatBoost</li>
+            <li class="project-tech-pill">Computer Vision</li>
+          </ul>
+        </div>
+        <div class="project-links">
+          <a href="https://www.kaggle.com/itzzomkar" target="_blank" rel="noopener noreferrer" class="project-link-btn" title="View Kaggle Profile">
+            <i class="fab fa-kaggle"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/itzzomkar/" target="_blank" rel="noopener noreferrer" class="project-link-btn" title="Connect on LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Contact Section (Exact Figma Layout with Form) -->
+  <section class="section-contact" id="contact">
+    <div class="contact-container">
+      <div class="contact-info">
+        <h2 class="contact-heading">
+          Let's <span class="text-stroke">talk</span> for<br>
+          Something special
+        </h2>
+        <p class="contact-desc">
+          I am currently open to machine learning internships, data science roles, and open-source collaborations. Whether you have a question or want to discuss a project, my inbox is always open!
+        </p>
+        <div class="contact-direct">
+          <a href="https://www.linkedin.com/in/itzzomkar/" target="_blank" rel="noopener noreferrer" class="direct-item interactive">
+            <div class="direct-icon"><i class="fab fa-linkedin-in"></i></div>
+            <span>linkedin.com/in/itzzomkar (Omkar Kadam)</span>
+          </a>
+          <a href="https://www.kaggle.com/itzzomkar" target="_blank" rel="noopener noreferrer" class="direct-item interactive">
+            <div class="direct-icon"><i class="fab fa-kaggle"></i></div>
+            <span>kaggle.com/itzzomkar (Omkar Kadam)</span>
+          </a>
+          <a href="https://github.com/itzzomkar" target="_blank" rel="nofollow noopener noreferrer" class="direct-item interactive">
+            <div class="direct-icon"><i class="fab fa-github"></i></div>
+            <span>github.com/itzzomkar</span>
+          </a>
+        </div>
       </div>
 
-      <div class="top-actions">
-        <button class="icon-action-btn" title="Horn [H]" onclick="playHorn()">
-          <i class="fas fa-bullhorn"></i>
+      <!-- Contact Form -->
+      <form class="contact-form" onsubmit="event.preventDefault(); alert('Thank you! Your message has been sent to Omkar Kadam (@itzzomkar).');">
+        <div class="form-group">
+          <label class="form-label">Your name</label>
+          <input type="text" class="form-input interactive" placeholder="Enter your name" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Email</label>
+          <input type="email" class="form-input interactive" placeholder="Enter your email" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Your website (if any)</label>
+          <input type="url" class="form-input interactive" placeholder="https://example.com">
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">How can I help you?</label>
+          <textarea class="form-textarea interactive" placeholder="What would you like to discuss?" required></textarea>
+        </div>
+
+        <button type="submit" class="btn-submit interactive">
+          Get In Touch
         </button>
-        <button class="icon-action-btn" title="Toggle Engine Audio" onclick="toggleAudio()" id="audio-btn">
-          <i class="fas fa-volume-mute"></i>
-        </button>
-        <button class="icon-action-btn" title="Reset Car [R]" onclick="resetCar()">
-          <i class="fas fa-undo-alt"></i>
-        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <a href="#" class="logo interactive" style="color: #fff;">
+        <div class="logo-badge" style="background: #fff; color: #000;">OK</div>
+        <span>Omkar Kadam</span>
+      </a>
+      <p class="footer-copy">&copy; 2026 Omkar Kadam (@itzzomkar). All rights reserved.</p>
+      <div class="footer-socials">
+        <a href="https://www.linkedin.com/in/itzzomkar/" class="footer-social-btn interactive"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.kaggle.com/itzzomkar" class="footer-social-btn interactive"><i class="fab fa-kaggle"></i></a>
+        <a href="https://huggingface.co/itzzomkar" class="footer-social-btn interactive"><i class="fas fa-smile-beam"></i></a>
+        <a href="https://github.com/itzzomkar" rel="nofollow" class="footer-social-btn interactive"><i class="fab fa-github"></i></a>
       </div>
     </div>
+  </footer>
 
-    <!-- Center Interactive Info Modal (Opens on Driving into Zones) -->
-    <div class="zone-modal" id="zone-modal">
-      <button class="modal-close-btn" onclick="closeModal()">
-        <i class="fas fa-times"></i>
-      </button>
-      <span class="modal-tag" id="modal-tag">// Project Showcase</span>
-      <h2 class="modal-title" id="modal-title">Mumbai University KT Dataset</h2>
-      <p class="modal-desc" id="modal-desc">
-        Analytical dataset of 10,000 engineering student profiles across Mumbai University. Models transit fatigue, study hours, and academic success.
-      </p>
-      <div class="modal-tags" id="modal-tags">
-        <span class="modal-pill">10,000 Rows</span>
-        <span class="modal-pill">Python</span>
-        <span class="modal-pill">Kaggle Medal</span>
-      </div>
-      <div class="modal-cta-row">
-        <a href="https://www.kaggle.com/datasets/itzzomkar/mumbai-university-kt-students-dataset" target="_blank" rel="noopener noreferrer" class="modal-btn-primary" id="modal-link-1">
-          <i class="fas fa-external-link-alt"></i>
-          <span id="modal-btn-1-text">Explore on Kaggle</span>
-        </a>
-        <a href="https://github.com/itzzomkar" target="_blank" rel="noopener noreferrer" class="modal-btn-secondary" id="modal-link-2">
-          <i class="fab fa-github"></i>
-          <span>GitHub</span>
-        </a>
-      </div>
-    </div>
-
-    <!-- Desktop Controls Instruction Pill -->
-    <div class="controls-pill">
-      <div class="key-group">
-        <span class="key-badge">W</span>
-        <span class="key-badge">A</span>
-        <span class="key-badge">S</span>
-        <span class="key-badge">D</span>
-        <span>/</span>
-        <span class="key-badge">&uarr;&larr;&darr;&rarr;</span>
-        <span>Drive</span>
-      </div>
-      <div class="key-group">
-        <span class="key-badge">SPACE</span>
-        <span>Drift</span>
-      </div>
-      <div class="key-group">
-        <span class="key-badge">H</span>
-        <span>Horn</span>
-      </div>
-      <div class="key-group">
-        <span class="key-badge">R</span>
-        <span>Reset</span>
-      </div>
-      <div class="speedo-wrap">
-        <i class="fas fa-tachometer-alt"></i>
-        <span id="speedo-val">0</span> KM/H
-      </div>
-    </div>
-
-    <!-- Mobile Virtual Controls -->
-    <div class="mobile-controls">
-      <div class="joystick-zone">
-        <div></div>
-        <button class="mobile-key" id="btn-up"><i class="fas fa-chevron-up"></i></button>
-        <div></div>
-        <button class="mobile-key" id="btn-left"><i class="fas fa-chevron-left"></i></button>
-        <button class="mobile-key" id="btn-down"><i class="fas fa-chevron-down"></i></button>
-        <button class="mobile-key" id="btn-right"><i class="fas fa-chevron-right"></i></button>
-      </div>
-
-      <div class="pedal-zone">
-        <button class="pedal-btn pedal-gas" id="btn-gas">GAS</button>
-        <button class="pedal-btn pedal-brake" id="btn-brake">BRAKE</button>
-      </div>
-    </div>
-  </div>
-
-  <!-- Semantic SEO Layer for Googlebot / Screen Readers -->
-  <main class="seo-hidden-layer">
-    <h1>Omkar Kadam (@itzzomkar) — AI & Machine Learning Specialist</h1>
-    <p>Computer Science and AIML engineer at Mumbai University. Recognized Kaggle Datasets Expert ranked #242 globally.</p>
-    
-    <h2>Featured Datasets & Projects</h2>
-    <article>
-      <h3>Mumbai University KT Students Dataset</h3>
-      <p>10,000 synthetic records predicting academic backlogs and commuting fatigue for engineering students.</p>
-      <a href="https://www.kaggle.com/datasets/itzzomkar/mumbai-university-kt-students-dataset">Kaggle Dataset</a>
-    </article>
-
-    <article>
-      <h3>EV Adoption Behavior and Range Anxiety Study</h3>
-      <p>Exploratory data analysis modeling electric vehicle adoption factors and infrastructure readiness.</p>
-      <a href="https://www.kaggle.com/itzzomkar">Kaggle Profile</a>
-    </article>
-
-    <article>
-      <h3>Wifi Password Manager (Offline AES-256)</h3>
-      <p>Zero-knowledge offline credential recovery tool built in Python with AES-256 encryption.</p>
-      <a href="https://github.com/itzzomkar/Wifi-Password-Manager">GitHub Repository</a>
-    </article>
-
-    <h2>Connect With Omkar Kadam (@itzzomkar)</h2>
-    <ul>
-      <li><a href="https://www.linkedin.com/in/itzzomkar/">LinkedIn: linkedin.com/in/itzzomkar/</a></li>
-      <li><a href="https://www.kaggle.com/itzzomkar">Kaggle: kaggle.com/itzzomkar</a></li>
-      <li><a href="https://github.com/itzzomkar">GitHub: github.com/itzzomkar</a></li>
-      <li><a href="https://huggingface.co/itzzomkar">Hugging Face: huggingface.co/itzzomkar</a></li>
-      <li><a href="https://medium.com/@itzzomkar">Medium: medium.com/@itzzomkar</a></li>
-      <li><a href="https://linktr.ee/itzzomkar">Linktree: linktr.ee/itzzomkar</a></li>
-    </ul>
-  </main>
-
-  <!-- 3D Physics Simulation & Driving Engine -->
+  <!-- INTERACTIVE SCRIPT: Three.js 3D Neural Mesh + Fluid Cursor Dynamics -->
   <script>
-    // --- 1. Scene, Camera & Isometric Studio Lighting ---
-    const canvas = document.getElementById('webgl-canvas');
-    const scene = new THREE.Scene();
-    scene.background = new THREE.Color(0xb5cbe0);
-    scene.fog = new THREE.FogExp2(0xb5cbe0, 0.0065);
+    // --- 1. Custom Interactive Cursor ---
+    const cursor = document.getElementById('cursor');
+    const follower = document.getElementById('cursor-follower');
+    let mouseX = window.innerWidth / 2, mouseY = window.innerHeight / 2;
+    let followerX = mouseX, followerY = mouseY;
 
-    const camera = new THREE.PerspectiveCamera(40, window.innerWidth / window.innerHeight, 0.1, 1000);
-    const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, powerPreference: "high-performance" });
-    renderer.setSize(window.innerWidth, window.innerHeight);
-    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
-    renderer.shadowMap.enabled = true;
-    renderer.shadowMap.type = THREE.PCFSoftShadowMap;
-
-    // Ambient & Directional Lighting
-    const ambientLight = new THREE.AmbientLight(0xffffff, 0.7);
-    scene.add(ambientLight);
-
-    const sunLight = new THREE.DirectionalLight(0xfff7e6, 1.35);
-    sunLight.position.set(70, 100, 50);
-    sunLight.castShadow = true;
-    sunLight.shadow.mapSize.width = 2048;
-    sunLight.shadow.mapSize.height = 2048;
-    sunLight.shadow.camera.near = 10;
-    sunLight.shadow.camera.far = 300;
-    const shadowD = 75;
-    sunLight.shadow.camera.left = -shadowD;
-    sunLight.shadow.camera.right = shadowD;
-    sunLight.shadow.camera.top = shadowD;
-    sunLight.shadow.camera.bottom = -shadowD;
-    scene.add(sunLight);
-
-    // --- 2. Cannon.js Physics Simulation World ---
-    const world = new CANNON.World();
-    world.gravity.set(0, -9.82 * 2.4, 0); // Crisp responsive arcade gravity
-    world.broadphase = new CANNON.SAPBroadphase(world);
-    world.defaultContactMaterial.friction = 0.35;
-    world.defaultContactMaterial.restitution = 0.25;
-
-    const groundMaterial = new CANNON.Material("ground");
-    const carMaterial = new CANNON.Material("car");
-    const obstacleMaterial = new CANNON.Material("obstacle");
-
-    const carGroundContact = new CANNON.ContactMaterial(carMaterial, groundMaterial, {
-      friction: 0.55,
-      restitution: 0.15
+    window.addEventListener('mousemove', (e) => {
+      mouseX = e.clientX;
+      mouseY = e.clientY;
+      cursor.style.left = mouseX + 'px';
+      cursor.style.top = mouseY + 'px';
     });
-    world.addContactMaterial(carGroundContact);
 
-    // Physics Ground Body
-    const groundBody = new CANNON.Body({ mass: 0, material: groundMaterial });
-    groundBody.addShape(new CANNON.Plane());
-    groundBody.quaternion.setFromAxisAngle(new CANNON.Vec3(1, 0, 0), -Math.PI / 2);
-    world.addBody(groundBody);
-
-    // Three.js Ground Plane
-    const floorGeo = new THREE.PlaneGeometry(450, 450);
-    const floorMat = new THREE.MeshStandardMaterial({
-      color: 0xd6e5f3,
-      roughness: 0.85,
-      metalness: 0.08
-    });
-    const floorMesh = new THREE.Mesh(floorGeo, floorMat);
-    floorMesh.rotation.x = -Math.PI / 2;
-    floorMesh.receiveShadow = true;
-    scene.add(floorMesh);
-
-    // Studio Grid Floor Overlay
-    const grid = new THREE.GridHelper(400, 80, 0x8aaecf, 0xb8d3ec);
-    grid.position.y = 0.02;
-    scene.add(grid);
-
-    // Helper: Dynamic Canvas Texture for Physics Crates
-    function createBoxTexture(text, bgColor, textColor = '#ffffff') {
-      const c = document.createElement('canvas');
-      c.width = 256;
-      c.height = 256;
-      const ctx = c.getContext('2d');
-      ctx.fillStyle = bgColor;
-      ctx.fillRect(0, 0, 256, 256);
-
-      // Frame
-      ctx.strokeStyle = 'rgba(255, 255, 255, 0.25)';
-      ctx.lineWidth = 14;
-      ctx.strokeRect(7, 7, 242, 242);
-
-      // Label Text
-      ctx.fillStyle = textColor;
-      ctx.font = '900 ' + (text.length > 6 ? '34px' : '56px') + ' Sora, sans-serif';
-      ctx.textAlign = 'center';
-      ctx.textBaseline = 'middle';
-      ctx.fillText(text, 128, 128);
-
-      const tex = new THREE.CanvasTexture(c);
-      return tex;
+    function animateCursor() {
+      followerX += (mouseX - followerX) * 0.15;
+      followerY += (mouseY - followerY) * 0.15;
+      follower.style.left = followerX + 'px';
+      follower.style.top = followerY + 'px';
+      requestAnimationFrame(animateCursor);
     }
+    animateCursor();
 
-    // --- 3. The 3D RC Toy Car (Chassis + Wheels + Physics) ---
-    const carChassisShape = new CANNON.Box(new CANNON.Vec3(1.2, 0.45, 2.0));
-    const carBody = new CANNON.Body({
-      mass: 190,
-      material: carMaterial,
-      linearDamping: 0.16,
-      angularDamping: 0.48
-    });
-    carBody.addShape(carChassisShape);
-    carBody.position.set(0, 1.5, 0);
-    world.addBody(carBody);
-
-    // Car Collision Audio Listener
-    carBody.addEventListener('collide', (e) => {
-      const impact = e.contact.getImpactVelocityAlongNormal();
-      if (Math.abs(impact) > 1.8) {
-        playImpactSound(Math.abs(impact));
-      }
-    });
-
-    const carGroup = new THREE.Group();
-    scene.add(carGroup);
-
-    // Main Car Body (Bright Cyan / Turquoise Sports Style)
-    const chassisGeo = new THREE.BoxGeometry(2.4, 0.7, 4.0);
-    const chassisMat = new THREE.MeshStandardMaterial({ color: 0x00f0ff, roughness: 0.25, metalness: 0.4 });
-    const chassisMesh = new THREE.Mesh(chassisGeo, chassisMat);
-    chassisMesh.castShadow = true;
-    chassisMesh.position.y = 0.1;
-    carGroup.add(chassisMesh);
-
-    // Dark Tinted Cabin
-    const cabinGeo = new THREE.BoxGeometry(1.9, 0.6, 2.2);
-    const cabinMat = new THREE.MeshStandardMaterial({ color: 0x0a1020, roughness: 0.1, metalness: 0.85 });
-    const cabinMesh = new THREE.Mesh(cabinGeo, cabinMat);
-    cabinMesh.position.set(0, 0.65, -0.2);
-    cabinMesh.castShadow = true;
-    carGroup.add(cabinMesh);
-
-    // Spoiler on Back
-    const wingGeo = new THREE.BoxGeometry(2.2, 0.1, 0.6);
-    const wingMat = new THREE.MeshStandardMaterial({ color: 0x111827, roughness: 0.2 });
-    const wingMesh = new THREE.Mesh(wingGeo, wingMat);
-    wingMesh.position.set(0, 0.9, -1.8);
-    wingMesh.castShadow = true;
-    carGroup.add(wingMesh);
-
-    // Headlights (Glowing white)
-    const lightGeo = new THREE.BoxGeometry(0.35, 0.18, 0.1);
-    const lightMat = new THREE.MeshBasicMaterial({ color: 0xffffff });
-    const leftLight = new THREE.Mesh(lightGeo, lightMat);
-    leftLight.position.set(-0.8, 0.2, 2.0);
-    const rightLight = leftLight.clone();
-    rightLight.position.x = 0.8;
-    carGroup.add(leftLight);
-    carGroup.add(rightLight);
-
-    // 4 Wheels
-    const wheels = [];
-    const wheelGeo = new THREE.CylinderGeometry(0.48, 0.48, 0.42, 22);
-    wheelGeo.rotateZ(Math.PI / 2);
-    const wheelMat = new THREE.MeshStandardMaterial({ color: 0x181c24, roughness: 0.7 });
-
-    const wheelOffsets = [
-      { x: -1.3, y: -0.2, z: 1.3 },
-      { x: 1.3, y: -0.2, z: 1.3 },
-      { x: -1.3, y: -0.2, z: -1.3 },
-      { x: 1.3, y: -0.2, z: -1.3 }
-    ];
-
-    wheelOffsets.forEach((pos) => {
-      const wMesh = new THREE.Mesh(wheelGeo, wheelMat);
-      wMesh.castShadow = true;
-      wMesh.position.set(pos.x, pos.y, pos.z);
-      carGroup.add(wMesh);
-      wheels.push(wMesh);
-    });
-
-    // --- 4. Interactive Physics Objects & Zones ---
-    const physicsObjects = [];
-
-    function createPhysicsBox(w, h, d, x, y, z, mass, hexColor, labelText) {
-      const boxShape = new CANNON.Box(new CANNON.Vec3(w / 2, h / 2, d / 2));
-      const boxBody = new CANNON.Body({ mass, material: obstacleMaterial });
-      boxBody.addShape(boxShape);
-      boxBody.position.set(x, y, z);
-      world.addBody(boxBody);
-
-      const colorString = '#' + hexColor.toString(16).padStart(6, '0');
-      const boxTex = createBoxTexture(labelText, colorString);
-
-      const boxGeo = new THREE.BoxGeometry(w, h, d);
-      const boxMat = new THREE.MeshStandardMaterial({
-        map: boxTex,
-        roughness: 0.35,
-        metalness: 0.15
+    document.querySelectorAll('.interactive, a, button, input, textarea').forEach(el => {
+      el.addEventListener('mouseenter', () => {
+        cursor.classList.add('hover');
+        follower.classList.add('hover');
       });
-      const boxMesh = new THREE.Mesh(boxGeo, boxMat);
-      boxMesh.castShadow = true;
-      boxMesh.receiveShadow = true;
-      scene.add(boxMesh);
-
-      physicsObjects.push({ mesh: boxMesh, body: boxBody });
-      return { mesh: boxMesh, body: boxBody };
-    }
-
-    // --- ZONE 1: SPAWN / OMKAR KADAM 3D LETTER CRATES ---
-    const letters = ["O", "M", "K", "A", "R", "", "K", "A", "D", "A", "M"];
-    letters.forEach((char, idx) => {
-      if (char !== "") {
-        createPhysicsBox(2.2, 2.2, 2.2, (idx - 5) * 2.8, 1.2, -16, 25, 0x1e293b, char);
-      }
+      el.addEventListener('mouseleave', () => {
+        cursor.classList.remove('hover');
+        follower.classList.remove('hover');
+      });
     });
 
-    // Floor Graphic Banner at Spawn
-    const bannerGeo = new THREE.PlaneGeometry(36, 6);
-    const bannerCanvas = document.createElement('canvas');
-    bannerCanvas.width = 1024;
-    bannerCanvas.height = 180;
-    const bctx = bannerCanvas.getContext('2d');
-    bctx.fillStyle = '#0f172a';
-    bctx.fillRect(0, 0, 1024, 180);
-    bctx.fillStyle = '#00f0ff';
-    bctx.font = 'bold 50px Sora, sans-serif';
-    bctx.textAlign = 'center';
-    bctx.fillText('OMKAR KADAM  •  AI & MACHINE LEARNING  •  @ITZOMKAR', 512, 105);
-    const bannerTex = new THREE.CanvasTexture(bannerCanvas);
-    const bannerMesh = new THREE.Mesh(bannerGeo, new THREE.MeshBasicMaterial({ map: bannerTex }));
-    bannerMesh.rotation.x = -Math.PI / 2;
-    bannerMesh.position.set(0, 0.05, -7);
-    scene.add(bannerMesh);
+    // --- 2. Interactive Fluid Particle Physics ---
+    const fluidCanvas = document.getElementById('fluid-canvas');
+    const fCtx = fluidCanvas.getContext('2d');
+    let fW = fluidCanvas.width = window.innerWidth;
+    let fH = fluidCanvas.height = window.innerHeight;
 
-    // --- ZONE 2: SKILLS PYRAMID (Smashable Labeled Bricks) ---
-    const skillColors = [0x00f0ff, 0x8a2be2, 0xffb800, 0x00ff88, 0xff3366, 0x3b82f6];
-    const skillList = ["Python", "PyTorch", "TensorFlow", "Scikit", "LightGBM", "Pandas", "NumPy", "SQL", "ThreeJS", "Kaggle"];
-    let skillIdx = 0;
-    for (let row = 0; row < 4; row++) {
-      for (let col = 0; col < 4 - row; col++) {
-        const xPos = 42 + (col - (3 - row) / 2) * 2.8;
-        const yPos = 1.1 + row * 2.2;
-        const zPos = -12;
-        createPhysicsBox(2.6, 2.1, 2.6, xPos, yPos, zPos, 18, skillColors[skillIdx % skillColors.length], skillList[skillIdx % skillList.length]);
-        skillIdx++;
-      }
-    }
-
-    // --- ZONE 3: BIG MEGA JUMP RAMP ---
-    // Cannon.js static sloped box physics ramp
-    const rampWidth = 9;
-    const rampLength = 16;
-    const rampAngle = 0.28; // ~16 degrees incline
-
-    const rampShape = new CANNON.Box(new CANNON.Vec3(rampWidth / 2, 0.3, rampLength / 2));
-    const rampBody = new CANNON.Body({ mass: 0, material: groundMaterial });
-    rampBody.addShape(rampShape);
-    rampBody.position.set(0, 2.2, 35);
-    rampBody.quaternion.setFromAxisAngle(new CANNON.Vec3(1, 0, 0), rampAngle);
-    world.addBody(rampBody);
-
-    // Visual Mesh for Ramp
-    const rampMesh = new THREE.Mesh(
-      new THREE.BoxGeometry(rampWidth, 0.6, rampLength),
-      new THREE.MeshStandardMaterial({ color: 0xffb800, roughness: 0.3, metalness: 0.2 })
-    );
-    rampMesh.position.copy(rampBody.position);
-    rampMesh.quaternion.copy(rampBody.quaternion);
-    rampMesh.castShadow = true;
-    rampMesh.receiveShadow = true;
-    scene.add(rampMesh);
-
-    // Mid-air Target / Bonus Blocks after the ramp jump
-    createPhysicsBox(2.2, 2.2, 2.2, -2.5, 4.0, 52, 10, 0xff3366, "HIT");
-    createPhysicsBox(2.2, 2.2, 2.2, 0, 4.0, 52, 10, 0x00f0ff, "ME!");
-    createPhysicsBox(2.2, 2.2, 2.2, 2.5, 4.0, 52, 10, 0x00ff88, "BOOM");
-
-    // --- ZONE 4: PROJECT PODIUMS (Interactive Triggers) ---
-    const zones = [
-      {
-        id: "kt-dataset",
-        x: -42, z: 25,
-        radius: 7.5,
-        color: 0x20beff,
-        tag: "// Kaggle #1 Dataset",
-        title: "Mumbai University KT Students Dataset",
-        desc: "10,000 engineering student records across Mumbai University. Models transit fatigue from Mumbai Local train commutes, study hours, and academic backlogs (KT) with statistical feature engineering.",
-        pills: ["10,000 Records", "Predictive Analytics", "Kaggle Medal", "Python"],
-        link1: "https://www.kaggle.com/datasets/itzzomkar/mumbai-university-kt-students-dataset",
-        link1Text: "Open on Kaggle",
-        link2: "https://github.com/itzzomkar",
-        link2Text: "GitHub"
-      },
-      {
-        id: "ev-dataset",
-        x: -42, z: -25,
-        radius: 7.5,
-        color: 0x00ff88,
-        tag: "// Consumer Modeling Study",
-        title: "EV Adoption & Range Anxiety Study",
-        desc: "Comprehensive consumer sentiment dataset analyzing electric vehicle purchase barriers, psychological range anxiety, and charging infrastructure access.",
-        pills: ["EDA", "Scikit-Learn", "Synthetic Modeling", "Python"],
-        link1: "https://www.kaggle.com/itzzomkar",
-        link1Text: "View on Kaggle",
-        link2: "https://github.com/itzzomkar",
-        link2Text: "GitHub"
-      },
-      {
-        id: "wifi-manager",
-        x: -18, z: -45,
-        radius: 7.5,
-        color: 0xff3366,
-        tag: "// Offline Cryptography",
-        title: "Wifi Password Manager (AES-256)",
-        desc: "Zero-knowledge credential retrieval application utilizing military-grade AES-256 encryption. Completely offline architecture ensuring zero external telemetry or credential leaks.",
-        pills: ["Cryptography", "AES-256", "Python", "Offline First"],
-        link1: "https://github.com/itzzomkar/Wifi-Password-Manager",
-        link1Text: "GitHub Repository",
-        link2: "https://www.linkedin.com/in/itzzomkar/",
-        link2Text: "LinkedIn"
-      },
-      {
-        id: "kaggle-medals",
-        x: 42, z: 35,
-        radius: 7.5,
-        color: 0xffb800,
-        tag: "// Competitive ML & CV",
-        title: "Kaggle Playground & 3LC Vision Pipelines",
-        desc: "High-performance modeling pipelines utilizing LightGBM, XGBoost, and CatBoost ensemble strategies for tabular benchmarks, plus low-light computer vision detection.",
-        pills: ["Rank #242 Global", "LightGBM", "XGBoost", "Optuna"],
-        link1: "https://www.kaggle.com/itzzomkar",
-        link1Text: "Kaggle Profile",
-        link2: "https://huggingface.co/itzzomkar",
-        link2Text: "Hugging Face"
-      }
-    ];
-
-    zones.forEach(zone => {
-      // Cylindrical ground target platform
-      const padGeo = new THREE.CylinderGeometry(zone.radius - 0.5, zone.radius - 0.5, 0.4, 32);
-      const padMat = new THREE.MeshStandardMaterial({ color: zone.color, roughness: 0.4, metalness: 0.3 });
-      const padMesh = new THREE.Mesh(padGeo, padMat);
-      padMesh.position.set(zone.x, 0.2, zone.z);
-      padMesh.receiveShadow = true;
-      scene.add(padMesh);
-
-      // Floating diamond beacon
-      const beaconGeo = new THREE.OctahedronGeometry(1.7);
-      const beaconMat = new THREE.MeshStandardMaterial({
-        color: zone.color,
-        roughness: 0.1,
-        metalness: 0.8,
-        emissive: zone.color,
-        emissiveIntensity: 0.4
-      });
-      const beaconMesh = new THREE.Mesh(beaconGeo, beaconMat);
-      beaconMesh.position.set(zone.x, 4.6, zone.z);
-      beaconMesh.castShadow = true;
-      scene.add(beaconMesh);
-      zone.beacon = beaconMesh;
-    });
-
-    // --- ZONE 5: SOCIAL PORTAL ARCHWAYS ---
-    const portals = [
-      { name: "LinkedIn", color: 0x0a66c2, x: 22, z: -38, url: "https://www.linkedin.com/in/itzzomkar/" },
-      { name: "Kaggle", color: 0x20beff, x: 36, z: -38, url: "https://www.kaggle.com/itzzomkar" },
-      { name: "GitHub", color: 0x181717, x: 50, z: -38, url: "https://github.com/itzzomkar" }
-    ];
-
-    portals.forEach(p => {
-      const archMat = new THREE.MeshStandardMaterial({ color: p.color, roughness: 0.2, metalness: 0.5 });
-      const postGeo = new THREE.BoxGeometry(0.8, 6.2, 0.8);
-      const leftP = new THREE.Mesh(postGeo, archMat);
-      leftP.position.set(p.x - 2.5, 3.1, p.z);
-      leftP.castShadow = true;
-      scene.add(leftP);
-
-      const rightP = new THREE.Mesh(postGeo, archMat);
-      rightP.position.set(p.x + 2.5, 3.1, p.z);
-      rightP.castShadow = true;
-      scene.add(rightP);
-
-      const topP = new THREE.Mesh(new THREE.BoxGeometry(5.8, 0.8, 0.8), archMat);
-      topP.position.set(p.x, 6.4, p.z);
-      topP.castShadow = true;
-      scene.add(topP);
-    });
-
-    // --- 5. Controls, Driving Mechanics & Audio ---
-    const keys = { forward: false, backward: false, left: false, right: false, brake: false };
-
-    window.addEventListener('keydown', (e) => {
-      if (e.key === 'w' || e.key === 'ArrowUp') keys.forward = true;
-      if (e.key === 's' || e.key === 'ArrowDown') keys.backward = true;
-      if (e.key === 'a' || e.key === 'ArrowLeft') keys.left = true;
-      if (e.key === 'd' || e.key === 'ArrowRight') keys.right = true;
-      if (e.key === ' ' || e.key === 'Spacebar') keys.brake = true;
-      if (e.key === 'h' || e.key === 'H') playHorn();
-      if (e.key === 'r' || e.key === 'R') resetCar();
-    });
-
-    window.addEventListener('keyup', (e) => {
-      if (e.key === 'w' || e.key === 'ArrowUp') keys.forward = false;
-      if (e.key === 's' || e.key === 'ArrowDown') keys.backward = false;
-      if (e.key === 'a' || e.key === 'ArrowLeft') keys.left = false;
-      if (e.key === 'd' || e.key === 'ArrowRight') keys.right = false;
-      if (e.key === ' ' || e.key === 'Spacebar') keys.brake = false;
-    });
-
-    // Touch Virtual Controls
-    function bindTouch(id, prop) {
-      const el = document.getElementById(id);
-      if (!el) return;
-      el.addEventListener('touchstart', (e) => { e.preventDefault(); keys[prop] = true; });
-      el.addEventListener('touchend', (e) => { e.preventDefault(); keys[prop] = false; });
-      el.addEventListener('mousedown', () => { keys[prop] = true; });
-      el.addEventListener('mouseup', () => { keys[prop] = false; });
-    }
-    bindTouch('btn-up', 'forward');
-    bindTouch('btn-down', 'backward');
-    bindTouch('btn-left', 'left');
-    bindTouch('btn-right', 'right');
-    bindTouch('btn-gas', 'forward');
-    bindTouch('btn-brake', 'brake');
-
-    // Web Audio Synthesizer (Zero external audio asset dependencies)
-    let audioCtx = null, engineOsc = null, engineGain = null, audioEnabled = false;
-
-    function initAudio() {
-      if (!audioCtx) {
-        audioCtx = new (window.AudioContext || window.webkitAudioContext)();
-        engineOsc = audioCtx.createOscillator();
-        engineGain = audioCtx.createGain();
-        engineOsc.type = 'sawtooth';
-        engineOsc.frequency.setValueAtTime(45, audioCtx.currentTime);
-        engineGain.gain.setValueAtTime(0.0, audioCtx.currentTime);
-        engineOsc.connect(engineGain);
-        engineGain.connect(audioCtx.destination);
-        engineOsc.start();
-      }
-    }
-
-    function toggleAudio() {
-      initAudio();
-      audioEnabled = !audioEnabled;
-      const btn = document.getElementById('audio-btn');
-      if (audioEnabled) {
-        audioCtx.resume();
-        engineGain.gain.setValueAtTime(0.04, audioCtx.currentTime);
-        btn.innerHTML = '<i class="fas fa-volume-up" style="color: var(--primary);"></i>';
-      } else {
-        engineGain.gain.setValueAtTime(0.0, audioCtx.currentTime);
-        btn.innerHTML = '<i class="fas fa-volume-mute"></i>';
-      }
-    }
-
-    function playHorn() {
-      initAudio();
-      if (!audioCtx) return;
-      audioCtx.resume();
-      [698.46, 880.00].forEach(freq => {
-        const osc = audioCtx.createOscillator();
-        const gain = audioCtx.createGain();
-        osc.type = 'square';
-        osc.frequency.setValueAtTime(freq, audioCtx.currentTime);
-        gain.gain.setValueAtTime(0.06, audioCtx.currentTime);
-        gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.22);
-        osc.connect(gain);
-        gain.connect(audioCtx.destination);
-        osc.start();
-        osc.stop(audioCtx.currentTime + 0.22);
-      });
-    }
-
-    function playImpactSound(intensity) {
-      if (!audioEnabled || !audioCtx) return;
-      const osc = audioCtx.createOscillator();
-      const gain = audioCtx.createGain();
-      osc.type = 'triangle';
-      osc.frequency.setValueAtTime(140 + Math.random() * 60, audioCtx.currentTime);
-      osc.frequency.exponentialRampToValueAtTime(35, audioCtx.currentTime + 0.12);
-      gain.gain.setValueAtTime(Math.min(intensity * 0.04, 0.2), audioCtx.currentTime);
-      gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.12);
-      osc.connect(gain);
-      gain.connect(audioCtx.destination);
-      osc.start();
-      osc.stop(audioCtx.currentTime + 0.12);
-    }
-
-    // Car Reset & Teleport Functions
-    function resetCar() {
-      carBody.position.set(0, 1.5, 0);
-      carBody.velocity.set(0, 0, 0);
-      carBody.angularVelocity.set(0, 0, 0);
-      carBody.quaternion.set(0, 0, 0, 1);
-    }
-
-    function teleportTo(dest) {
-      if (dest === 'spawn') {
-        carBody.position.set(0, 1.5, 0);
-      } else if (dest === 'projects') {
-        carBody.position.set(-36, 1.5, 20);
-      } else if (dest === 'skills') {
-        carBody.position.set(35, 1.5, -6);
-      } else if (dest === 'ramp') {
-        carBody.position.set(0, 1.5, 15);
-      } else if (dest === 'socials') {
-        carBody.position.set(25, 1.5, -30);
-      }
-      carBody.velocity.set(0, 0, 0);
-      carBody.angularVelocity.set(0, 0, 0);
-    }
-
-    // Modal Handling
-    let activeModalZone = null;
-    function openModalForZone(z) {
-      if (activeModalZone === z.id) return;
-      activeModalZone = z.id;
-      document.getElementById('modal-tag').textContent = z.tag;
-      document.getElementById('modal-title').textContent = z.title;
-      document.getElementById('modal-desc').textContent = z.desc;
-      
-      const tagsContainer = document.getElementById('modal-tags');
-      tagsContainer.innerHTML = '';
-      z.pills.forEach(p => {
-        const pill = document.createElement('span');
-        pill.className = 'modal-pill';
-        pill.textContent = p;
-        tagsContainer.appendChild(pill);
-      });
-
-      const btn1 = document.getElementById('modal-link-1');
-      btn1.href = z.link1;
-      document.getElementById('modal-btn-1-text').textContent = z.link1Text;
-
-      const btn2 = document.getElementById('modal-link-2');
-      btn2.href = z.link2;
-
-      document.getElementById('zone-modal').classList.add('active');
-    }
-
-    function closeModal() {
-      document.getElementById('zone-modal').classList.remove('active');
-      activeModalZone = null;
-    }
-
-    // Tire Smoke / Dust Particle System
-    const dustParticles = [];
-    function spawnDust(x, y, z) {
-      if (dustParticles.length > 35) return;
-      const pGeo = new THREE.SphereGeometry(0.18 + Math.random() * 0.12, 6, 6);
-      const pMat = new THREE.MeshBasicMaterial({ color: 0xffffff, transparent: true, opacity: 0.45 });
-      const pMesh = new THREE.Mesh(pGeo, pMat);
-      pMesh.position.set(x + (Math.random() - 0.5) * 0.4, y, z + (Math.random() - 0.5) * 0.4);
-      scene.add(pMesh);
-      dustParticles.push({ mesh: pMesh, life: 1.0 });
-    }
-
-    // --- 6. Main Physics & Render Loop (60 FPS) ---
-    const clock = new THREE.Clock();
-    const speedoEl = document.getElementById('speedo-val');
-
-    function animate() {
-      requestAnimationFrame(animate);
-      const delta = Math.min(clock.getDelta(), 0.08);
-
-      // --- Vehicle Physics Input Simulation ---
-      const forwardForce = 1600;
-
-      // Local forward and right vectors
-      const forwardVec = new CANNON.Vec3(0, 0, 1);
-      const worldForward = carBody.quaternion.vmult(forwardVec);
-
-      const rightVec = new CANNON.Vec3(1, 0, 0);
-      const worldRight = carBody.quaternion.vmult(rightVec);
-
-      // Speed calculation
-      const speed = carBody.velocity.length();
-      const kmh = Math.round(speed * 3.6);
-      speedoEl.textContent = kmh;
-
-      if (audioEnabled && engineOsc) {
-        engineOsc.frequency.setValueAtTime(45 + kmh * 2.8, audioCtx.currentTime);
-      }
-
-      // Drive Forward / Reverse
-      if (keys.forward) {
-        carBody.applyForce(worldForward.scale(forwardForce), carBody.position);
-      } else if (keys.backward) {
-        carBody.applyForce(worldForward.scale(-forwardForce * 0.75), carBody.position);
-      }
-
-      // Steering
-      if (keys.left) {
-        carBody.angularVelocity.y += 0.085;
-      }
-      if (keys.right) {
-        carBody.angularVelocity.y -= 0.085;
-      }
-
-      // Lateral Tire Friction / Drift Damping
-      const lateralVelocity = carBody.velocity.dot(worldRight);
-      const grip = keys.brake ? 0.35 : 0.88;
-      const lateralDamping = worldRight.scale(-lateralVelocity * grip);
-      carBody.velocity.vadd(lateralDamping, carBody.velocity);
-
-      // Handbrake
-      if (keys.brake) {
-        carBody.velocity.scale(0.95, carBody.velocity);
-      }
-
-      // Spawn dust when driving fast or drifting
-      if (speed > 4.0 && Math.random() < 0.4) {
-        spawnDust(carBody.position.x - worldForward.x * 1.5, carBody.position.y, carBody.position.z - worldForward.z * 1.5);
-      }
-
-      // Update Dust Particles
-      for (let i = dustParticles.length - 1; i >= 0; i--) {
-        const p = dustParticles[i];
-        p.life -= delta * 2.8;
-        p.mesh.position.y += delta * 0.9;
-        p.mesh.scale.multiplyScalar(1.03);
-        p.mesh.material.opacity = p.life * 0.45;
-        if (p.life <= 0) {
-          scene.remove(p.mesh);
-          p.mesh.geometry.dispose();
-          p.mesh.material.dispose();
-          dustParticles.splice(i, 1);
-        }
-      }
-
-      // Step Physics World
-      world.step(1 / 60, delta, 3);
-
-      // Sync Visual Car with Physics Body
-      carGroup.position.copy(carBody.position);
-      carGroup.quaternion.copy(carBody.quaternion);
-
-      // Animate Wheels
-      wheels.forEach((w, i) => {
-        w.rotation.x += (keys.forward ? 0.25 : (keys.backward ? -0.25 : speed * 0.06));
-        if (i < 2) {
-          w.rotation.y = (keys.left ? 0.35 : (keys.right ? -0.35 : 0));
-        }
-      });
-
-      // Sync All Physics Obstacles / Crates
-      physicsObjects.forEach(obj => {
-        obj.mesh.position.copy(obj.body.position);
-        obj.mesh.quaternion.copy(obj.body.quaternion);
-      });
-
-      // Animate Zone Floating Beacons
-      zones.forEach(z => {
-        if (z.beacon) {
-          z.beacon.rotation.y += 0.015;
-          z.beacon.rotation.x += 0.008;
-        }
-
-        // Check if car drove into zone radius
-        const dist = Math.hypot(carBody.position.x - z.x, carBody.position.z - z.z);
-        if (dist < z.radius) {
-          openModalForZone(z);
-        }
-      });
-
-      // Check if car drove into portals
-      portals.forEach(p => {
-        const pDist = Math.hypot(carBody.position.x - p.x, carBody.position.z - p.z);
-        if (pDist < 4.0) {
-          window.open(p.url, '_blank');
-          carBody.position.z += 7; // Boost through portal
-        }
-      });
-
-      // --- Smooth Bruno Simon Isometric Camera Tracking ---
-      const targetCamX = carBody.position.x + 24;
-      const targetCamY = carBody.position.y + 28;
-      const targetCamZ = carBody.position.z + 28;
-
-      camera.position.x += (targetCamX - camera.position.x) * 0.08;
-      camera.position.y += (targetCamY - camera.position.y) * 0.08;
-      camera.position.z += (targetCamZ - camera.position.z) * 0.08;
-      camera.lookAt(carBody.position.x, carBody.position.y + 1, carBody.position.z);
-
-      renderer.render(scene, camera);
-    }
-    animate();
-
-    // Responsive Canvas Resize
     window.addEventListener('resize', () => {
-      camera.aspect = window.innerWidth / window.innerHeight;
-      camera.updateProjectionMatrix();
-      renderer.setSize(window.innerWidth, window.innerHeight);
+      fW = fluidCanvas.width = window.innerWidth;
+      fH = fluidCanvas.height = window.innerHeight;
     });
+
+    const particles = [];
+    class FluidDrop {
+      constructor(x, y) {
+        this.x = x;
+        this.y = y;
+        this.size = Math.random() * 6 + 3;
+        this.speedX = (Math.random() - 0.5) * 3.5;
+        this.speedY = (Math.random() - 0.5) * 3.5;
+        this.life = 1.0;
+        this.decay = Math.random() * 0.025 + 0.015;
+        this.color = Math.random() > 0.4 ? 'rgba(0, 0, 0, ' : 'rgba(37, 99, 235, ';
+      }
+      update() {
+        this.x += this.speedX;
+        this.y += this.speedY;
+        this.life -= this.decay;
+        this.size *= 0.95;
+      }
+      draw(ctx) {
+        ctx.save();
+        ctx.fillStyle = this.color + Math.max(0, this.life * 0.35) + ')';
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, Math.max(0.5, this.size), 0, Math.PI * 2);
+        ctx.fill();
+        ctx.restore();
+      }
+    }
+
+    let prevX = 0, prevY = 0;
+    window.addEventListener('mousemove', (e) => {
+      const d = Math.hypot(e.clientX - prevX, e.clientY - prevY);
+      if (d > 4) {
+        for (let i = 0; i < 2; i++) {
+          particles.push(new FluidDrop(e.clientX, e.clientY));
+        }
+        prevX = e.clientX;
+        prevY = e.clientY;
+      }
+    });
+
+    function loopFluid() {
+      fCtx.clearRect(0, 0, fW, fH);
+      for (let i = particles.length - 1; i >= 0; i--) {
+        const p = particles[i];
+        p.update();
+        p.draw(fCtx);
+        if (p.life <= 0) particles.splice(i, 1);
+      }
+      requestAnimationFrame(loopFluid);
+    }
+    loopFluid();
+
+    // --- 3. Three.js 3D Neural Wireframe Core (Hero) ---
+    const heroCanvas = document.getElementById('three-hero-canvas');
+    if (heroCanvas) {
+      const scene = new THREE.Scene();
+      const camera = new THREE.PerspectiveCamera(50, heroCanvas.clientWidth / heroCanvas.clientHeight, 0.1, 1000);
+      camera.position.z = 24;
+
+      const renderer = new THREE.WebGLRenderer({ canvas: heroCanvas, alpha: true, antialias: true });
+      renderer.setSize(heroCanvas.clientWidth, heroCanvas.clientHeight);
+      renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+
+      // Icosahedron with Wireframe + Inner Nodes
+      const geo = new THREE.IcosahedronGeometry(7.5, 2);
+      const wireMat = new THREE.MeshBasicMaterial({ color: 0x000000, wireframe: true, transparent: true, opacity: 0.85 });
+      const wireMesh = new THREE.Mesh(geo, wireMat);
+      scene.add(wireMesh);
+
+      // Particle points on vertices
+      const pointMat = new THREE.PointsMaterial({ color: 0x2563eb, size: 0.35 });
+      const pointsMesh = new THREE.Points(geo, pointMat);
+      scene.add(pointsMesh);
+
+      let targetX = 0, targetY = 0;
+      window.addEventListener('mousemove', (e) => {
+        const rect = heroCanvas.getBoundingClientRect();
+        const nx = ((e.clientX - rect.left) / rect.width) * 2 - 1;
+        const ny = -(((e.clientY - rect.top) / rect.height) * 2 - 1);
+        targetX = ny * 0.45;
+        targetY = nx * 0.45;
+      });
+
+      function animateThree() {
+        requestAnimationFrame(animateThree);
+        wireMesh.rotation.x += 0.003;
+        wireMesh.rotation.y += 0.005;
+        pointsMesh.rotation.x += 0.003;
+        pointsMesh.rotation.y += 0.005;
+
+        wireMesh.rotation.x += (targetX - wireMesh.rotation.x) * 0.05;
+        wireMesh.rotation.y += (targetY - wireMesh.rotation.y) * 0.05;
+
+        renderer.render(scene, camera);
+      }
+      animateThree();
+
+      window.addEventListener('resize', () => {
+        if (heroCanvas) {
+          camera.aspect = heroCanvas.clientWidth / heroCanvas.clientHeight;
+          camera.updateProjectionMatrix();
+          renderer.setSize(heroCanvas.clientWidth, heroCanvas.clientHeight);
+        }
+      });
+    }
   </script>
 </body>
 </html>
